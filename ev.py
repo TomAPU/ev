@@ -166,7 +166,7 @@ class SendThread(QThread):
             return False,f'tcpoptions must be a valid python list'
 
 
-        otheroptions=['ipaddress','tcppayload','shuffle','badchecksum','badchecksumtype','fakettltype','sleeptime','httpprotocol','corruptack']
+        otheroptions=['ipaddress','tcppayload','shuffle','badchecksum','badchecksumtype','fakettltype','sleeptime','httpprotocol','corruptack','corruptflags']
         for option in otheroptions:
             self.setoption(option)
         try:
@@ -232,6 +232,10 @@ class SendThread(QThread):
             if self.getoption('corruptack'):
                 corruptackmodifyfunc,desc=(garbagepacket,'corruptack-junk')
                 addtionalfunctions.append(lambda pck:(fuckupack(corruptackmodifyfunc(pck)),desc))
+            #corrupt flags
+            if self.getoption('corruptflags'):
+                corruptackmodifyfunc,desc=(garbagepacket,'corruptflags-junk')
+                addtionalfunctions.append(lambda pck:(setflags(corruptackmodifyfunc(pck),'FRAPUEN'),desc))
             #ip fragmentation the original packet if it is needed
             if self.getoption('breakip'):
                 addtionalfunctions.append(lambda pck:(ipfragmentation(pck,self.getoption('ipfragmentby')),'ipfragmentation') )
@@ -240,6 +244,9 @@ class SendThread(QThread):
             
             #make them to packetgroups
             packetgroups=[[func(pck) for func in addtionalfunctions] for pck in packetlist]
+            #shuffle packets in same group
+            if self.getoption('shuffle'):
+                random.shuffle(packetgroups)
             #packetgroups=>[[f1(seg1),f2(seg1),f3(seg3)...],[f1(seg2),f2(seg2),f3(seg3)...]]
         except Exception as err:
             traceback.print_exc(err)

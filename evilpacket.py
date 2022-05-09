@@ -82,3 +82,11 @@ def fuckupack(originalpacket):
     packet=originalpacket.copy()
     packet[TCP].ack=(packet[TCP].ack+RandShort())%65535
     return packet
+
+def setflags(originalpacket,flags):
+    '''
+    fuckup a packet's flags
+    '''
+    packet=originalpacket.copy()
+    packet[TCP].flags=flags#'FRAPUEN'
+    return packet

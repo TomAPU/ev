@@ -676,6 +676,19 @@ p, li { white-space: pre-wrap; }
      <string>Corrupt ack distractor</string>
     </property>
    </widget>
+   <widget class="QCheckBox" name="corruptflags">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>540</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Corrupt flags</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
