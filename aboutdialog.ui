@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>aboutdialog</class>
+ <widget class="QDialog" name="aboutdialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>548</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>91</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>511</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In 1998, a famous article &lt;span style=&quot; font-style:italic;&quot;&gt;Insertion, Evasion, and Denial of &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Service&lt;/span&gt; was published. It introduced techniques of evading&lt;/p&gt;&lt;p&gt;IDS devices by packet manipulation in network and transport&lt;/p&gt;&lt;p&gt;layer.&lt;/p&gt;&lt;p&gt;Now it's 2022, hackers now keen on playing around data in&lt;/p&gt;&lt;p&gt;application layer to defeat WAFs and few of them still remember&lt;/p&gt;&lt;p&gt;such techniques. However, Recently I've found that such&lt;/p&gt;&lt;p&gt;old-school techniques can still circumvent some IDSes and I &lt;/p&gt;&lt;p&gt;believe they deserve more attention.&lt;/p&gt;&lt;p&gt;So I built this tool, it allows users building their own TCP&lt;/p&gt;&lt;p&gt;packet and leveraging these techniques easily.&lt;/p&gt;&lt;p&gt;Happy Hacking!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>420</y>
+     <width>441</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Author: &lt;a href=&quot;https://twitter.com/drivertomtt&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;drivertomtt@twitter.com&lt;/span&gt;&lt;/a&gt; in &lt;a href=&quot;https://www.0x401.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;0x401 Team&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;My blog: &lt;a href=&quot;https://drivertom.blogspot.com/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://drivertom.blogspot.com/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;My Github: &lt;a href=&quot;https://github.com/TomAPU/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://github.com/TomAPU/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
