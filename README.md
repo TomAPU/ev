@@ -75,10 +75,6 @@ python3 ev.py
 
 ## 基本使用
 
-Fill IP,Port,and Payload field and click "Send" button to send the TCP packet to target. You can also set TCP options and source port. Remeber that TCP options are tcp options supported by scapy.
-
-You can view response packets in "Received packets" window and click packet to view it in "View Received Packet" window. This is implemented by scapy's sniff() function, it finds packets that matches the target IP or is ICMP protocol(so that you can find TTL exceeded packets). However, sniff() sometimes records packets duplicately.So  I strongly recommend users use WireShark if you've installed one to see received packets.
-
 填写IP、Port和Payload字段，点击 "发送 "按钮，将TCP数据包发送到目标。您还可以设置TCP选项和源端口。请注意，TCP选项是scapy支持的TCP选项。
 
 您可以在 "Received packets"窗口查看响应数据包，点击数据包在 "View Received Packet"窗口查看。这个功能由scapy的sniff()函数实现的，它找到与目标IP相匹配的数据包，或者是ICMP协议的数据包（这样你可以找到因为TTL过期而返回的ICMP包）。然而，sniff()有时会重复记录数据，所以如果安了Wireshark，我强烈建议用户使用WireShark而不是这个
