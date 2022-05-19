@@ -166,7 +166,7 @@ class SendThread(QThread):
             return False,f'tcpoptions must be a valid python list'
 
 
-        otheroptions=['ipaddress','tcppayload','shuffle','badchecksum','badchecksumtype','fakettltype','sleeptime','httpprotocol','corruptack','corruptflags']
+        otheroptions=['ipaddress','tcppayload','shuffle','badchecksum','badchecksumtype','fakettltype','sleeptime','httpprotocol','corruptack','corruptflags','sleepaftersyn']
         for option in otheroptions:
             self.setoption(option)
         try:
@@ -206,6 +206,8 @@ class SendThread(QThread):
         receivepacket=sr1(synpacket,timeout=10)
         if not receivepacket:
             return False,'connection failed'
+        self.showstatus("received ACK,start sleeping...")
+        time.sleep(self.getoption('sleepaftersyn'))
         ackpacket=IP(dst=ipaddress)/TCP(sport=sport,dport=dport,flags="A",ack=receivepacket.seq+1,seq=receivepacket.ack,window=receivepacket.window,options=tcpoptions)
         send(ackpacket)
         #generate packets
@@ -294,7 +296,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         for intform in self.intforms:
             getattr(self,intform).setValidator(QIntValidator())
         #double forms constraint
-        self.doubleforms=['sleeptime']
+        self.doubleforms=['sleeptime','sleepaftersyn']
         for doubleform in self.doubleforms:
             getattr(self,doubleform).setValidator(QDoubleValidator())
         #sendthread

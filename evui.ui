@@ -68,7 +68,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>210</y>
+      <y>260</y>
       <width>171</width>
       <height>21</height>
      </rect>
@@ -81,7 +81,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>260</y>
+      <y>310</y>
       <width>161</width>
       <height>21</height>
      </rect>
@@ -97,7 +97,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>230</y>
+      <y>280</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -113,7 +113,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>280</y>
+      <y>330</y>
       <width>71</width>
       <height>21</height>
      </rect>
@@ -126,7 +126,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>365</y>
+      <y>405</y>
       <width>191</width>
       <height>21</height>
      </rect>
@@ -142,7 +142,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>410</y>
+      <y>450</y>
       <width>141</width>
       <height>22</height>
      </rect>
@@ -165,7 +165,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>385</y>
+      <y>425</y>
       <width>51</width>
       <height>21</height>
      </rect>
@@ -230,7 +230,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>620</y>
+      <y>630</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -243,7 +243,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>760</y>
+      <y>770</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -259,7 +259,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>760</y>
+      <y>770</y>
       <width>101</width>
       <height>21</height>
      </rect>
@@ -272,7 +272,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>385</y>
+      <y>425</y>
       <width>31</width>
       <height>21</height>
      </rect>
@@ -285,7 +285,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>230</y>
+      <y>280</y>
       <width>41</width>
       <height>20</height>
      </rect>
@@ -298,7 +298,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>230</y>
+      <y>280</y>
       <width>81</width>
       <height>20</height>
      </rect>
@@ -311,7 +311,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>280</y>
+      <y>330</y>
       <width>41</width>
       <height>20</height>
      </rect>
@@ -324,7 +324,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>280</y>
+      <y>330</y>
       <width>81</width>
       <height>20</height>
      </rect>
@@ -340,7 +340,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>435</x>
-      <y>160</y>
+      <y>210</y>
       <width>31</width>
       <height>21</height>
      </rect>
@@ -353,7 +353,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>160</y>
+      <y>210</y>
       <width>31</width>
       <height>20</height>
      </rect>
@@ -366,7 +366,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>470</x>
-      <y>160</y>
+      <y>210</y>
       <width>161</width>
       <height>20</height>
      </rect>
@@ -392,7 +392,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>310</y>
+      <y>360</y>
       <width>201</width>
       <height>21</height>
      </rect>
@@ -408,7 +408,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>470</y>
+      <y>510</y>
       <width>141</width>
       <height>22</height>
      </rect>
@@ -428,7 +428,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>450</y>
+      <y>490</y>
       <width>211</width>
       <height>21</height>
      </rect>
@@ -441,7 +441,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>730</y>
+      <y>740</y>
       <width>251</width>
       <height>19</height>
      </rect>
@@ -512,7 +512,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>640</y>
+      <y>650</y>
       <width>201</width>
       <height>71</height>
      </rect>
@@ -538,7 +538,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>410</y>
+      <y>450</y>
       <width>41</width>
       <height>21</height>
      </rect>
@@ -551,7 +551,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>470</y>
+      <y>510</y>
       <width>41</width>
       <height>21</height>
      </rect>
@@ -570,14 +570,14 @@ Connection: close
      </rect>
     </property>
     <property name="text">
-     <string>======Request Split======</string>
+     <string>===Request Split&amp;Delay===</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_18">
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>340</y>
+      <y>380</y>
       <width>211</width>
       <height>20</height>
      </rect>
@@ -590,7 +590,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>590</y>
+      <y>600</y>
       <width>211</width>
       <height>20</height>
      </rect>
@@ -603,7 +603,7 @@ Connection: close
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>180</y>
+      <y>230</y>
       <width>181</width>
       <height>20</height>
      </rect>
@@ -667,7 +667,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>510</y>
+      <y>550</y>
       <width>201</width>
       <height>21</height>
      </rect>
@@ -680,13 +680,68 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>540</y>
+      <y>580</y>
       <width>201</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
      <string>Corrupt flags</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sleepaftersyn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>435</x>
+      <y>160</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>160</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>seconds after first</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>160</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wait</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>180</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SYN packet</string>
     </property>
    </widget>
   </widget>
