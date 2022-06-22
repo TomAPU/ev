@@ -71,7 +71,7 @@ def fuckupchecksum(originalpacket):
     #calculate its chksum first
     del packet[IP].chksum
     originalchksum=packet.__class__(bytes(packet)).chksum
-    fuckedupchksum=(originalchksum+RandShort()) % 65535
+    fuckedupchksum=(originalchksum+RandShort()) % 0xffff
     packet.chksum=fuckedupchksum
     return packet
 
@@ -80,7 +80,7 @@ def fuckupack(originalpacket):
     fuckup a packet's ack
     '''
     packet=originalpacket.copy()
-    packet[TCP].ack=(packet[TCP].ack+RandShort())%65535
+    packet[TCP].ack=(packet[TCP].ack+RandShort())%0xffffffff
     return packet
 
 def setflags(originalpacket,flags):
