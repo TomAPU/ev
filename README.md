@@ -12,6 +12,15 @@ It supports HTTP protocol but unfortunately not HTTPS protocol. The handshake pr
 
 This tools is written in Python and QT5, using [Scapy](https://scapy.net/) to make packets. So though this software is tested on Windows platform only, it theoretically works on other platforms like Linux or MacOS. 
 
+## Avoiding RST Issues
+EV is based on Scapy, which sends packets at a very low level. Consequently, when it sends TCP packets, the OS is unaware that the corresponding TCP source port belongs to it. When the target's return packet reaches our operating system, the OS will be confused and respond with an RST packet, interfering our test of IDS.
+
+To solve this problem:
+
+For Windows systems, we need to enable the default firewall. Windows' firewall, with its default "stealth mode," can prevent the OS from sending unsolicited RST packets.
+
+For Linux systems, we can use [iptables](https://stackoverflow.com/questions/9058052/unwanted-rst-tcp-packet-with-scapy) to resolve the issue.
+
 ## Setup&run
 
 Run following commands in your cmd/terminal to pull the latest version of the software and install required python packages:
@@ -58,6 +67,13 @@ EV是一个通过各种著名的TCP/IP报文操纵技术实现IDS绕过的工具
 当前支持HTTP协议但是不支持HTTPS协议，HTTPS协议的握手比较复杂，我还没搞懂怎么优雅地构造TLS包。
 
 这个工具是用 Python 和 QT5 编写的，使用 [Scapy](https://scapy.net/) 来制作数据包。 因此，虽然该软件仅在 Windows 平台上进行了测试，但理论上它可以在 Linux 或 MacOS 等其他平台上运行。
+
+## 避免RST的问题
+EV基于Scapy运行，Scapy发包的机制是非常底层的，因此当它发送TCP包的时候，操作系统并不知道对应的TCP源端口属于它，因此当目标返回的包到达我们的操作系统时，操作系统会困惑地发送RST回去，最终干扰我们的试验。
+
+为解决这个问题，对于Windows系统而言，我们需要将其默认的防火墙打开。Winddows的防火墙默认开启的 "stealth mode" 能阻止操作系统自发的RST包。
+
+对于Linux系统，我们可以用[iptables](https://stackoverflow.com/questions/9058052/unwanted-rst-tcp-packet-with-scapy)来解决。
 
 ## 安装&运行
 
