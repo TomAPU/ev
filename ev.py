@@ -208,12 +208,15 @@ class SendThread(QThread):
             return False,'connection failed'
         self.showstatus("received ACK,start sleeping...")
         time.sleep(self.getoption('sleepaftersyn'))
-        ackpacket=IP(dst=ipaddress)/TCP(sport=sport,dport=dport,flags="A",ack=receivepacket.seq+1,seq=receivepacket.ack,window=receivepacket.window,options=tcpoptions)
+        window=receivepacket.window
+        if window==0:
+            window=64000
+        ackpacket=IP(dst=ipaddress)/TCP(sport=sport,dport=dport,flags="A",ack=receivepacket.seq+1,seq=receivepacket.ack,window=window,options=tcpoptions)
         send(ackpacket)
         #generate packets
         self.showstatus("generating packets...")
         try:
-            originalpacket=IP(dst=ipaddress)/TCP(sport=sport,dport=dport,flags="PA",ack=receivepacket.seq+1,seq=receivepacket.ack,window=receivepacket.window,options=tcpoptions)/tcppayload
+            originalpacket=IP(dst=ipaddress)/TCP(sport=sport,dport=dport,flags="PA",ack=receivepacket.seq+1,seq=receivepacket.ack,window=window,options=tcpoptions)/tcppayload
             #tcp segmentation
             if self.getoption('breaktcp'):
                 packetlist=tcpsegmentation(originalpacket,self.getoption('tcpsegmentby'))
