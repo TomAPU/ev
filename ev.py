@@ -328,7 +328,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         try:
             self.send()
         except Exception as e:
-            QMessageBox.critical(self, "Error", "un expected error occured: %s"%e)
+            QMessageBox.critical(self, "Error", "unexpected error occurred: %s"%e)
     
     def viewpacketdetail(self,row,col):
         self.tablelock.lock()
